@@ -3,53 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelome's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Baldwin Peter Kpodo - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #01579b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0288d1;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #0288d1;
+            padding-bottom: 10px;
+            color: #01579b;
+        }
+        .projects a {
+            display: block;
+            margin: 10px 0;
+            color: #0288d1;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #01579b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #0288d1;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Jelome's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Baldwin Peter Kpodo</h1>
+        <p>DevOps Engineer | Cybersecurity and Ethical Hacking Enthusiast</p>
     </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a DevOps engineer, Cybersecurity and Ethical hacking enthusiast. I worked as a maintenance mechanical engineer for 9 years before starting my IT education in 2021 at IPMC UNIVERSITY COLLEGE. Currently, I am in my final month of the azubiafrica.org DevOps engineering program. I hold certifications in Data Analytics, Microsoft Azure Fundamentals, and I am determined to make a difference with my lessons.</p>
-        <p>GitHub: <a href="https://github.com/Yelom29" target="_blank">Yelom29</a></p>
-        <p>Email: <a href="mailto:jelomebusinesses@yahoo.com">jelomebusinesses@yahoo.com</a></p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <P>Check my github account above for my projects</P>
-            <p>Project Description</p>
-            <p>DevOps related projects</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me: +233244198509</h2>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills & Certifications</a>
+        <a href="#education">Education & Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Baldwin Peter Kpodo, a DevOps engineer, Cybersecurity and Ethical hacking enthusiast. I worked as a maintenance mechanical engineer for 9 years before starting my IT education in 2021 at IPMC UNIVERSITY COLLEGE. Currently, I am in my final month of the azubiafrica.org DevOps engineering program. I hold certifications in Data Analytics, Microsoft Azure Fundamentals, and I am determined to make a difference with my lessons.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Check out my projects on <a href="https://github.com/Yelom29" target="_blank">GitHub</a>.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills & Certifications</h2>
+            <ul>
+                <li>DevOps Engineering</li>
+                <li>Cybersecurity</li>
+                <li>Ethical Hacking</li>
+                <li>Maintenance Mechanical Engineering</li>
+                <li>Data Analytics</li>
+                <li>Microsoft Azure Fundamentals</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education & Experience</h2>
+            <h3>Education</h3>
+            <ul>
+                <li>IPMC UNIVERSITY COLLEGE - IT Education (2021 - Present)</li>
+                <li>azubiafrica.org - DevOps Engineering Program (Final Month)</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul>
+                <li>Maintenance Mechanical Engineer - 9 years</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xpwarpaz" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Jelome. All rights reserved.</p>
+        &copy; 2024 Baldwin Peter Kpodo
     </footer>
 </body>
 </html>
